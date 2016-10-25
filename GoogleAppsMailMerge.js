@@ -537,6 +537,7 @@ function sendEmails(e) {
       GmailApp.sendEmail(rowData.emailAddress, emailSubject, emailText, {
         attachments: templateAttachments,
         htmlBody: emailText,
+        cc: rowData.cc,
 
         inlineImages: inlineImages
 
